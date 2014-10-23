@@ -1,0 +1,125 @@
+/*------------------------------------------------------------------
+# [Color codes]
+
+# White (text): #ffffff
+# Grey: #353b49
+# highlighted , hover: #F26522
+# Light gray/blue (header) #6e8697
+
+# */
+
+
+h1,h2,h4,h4,h5,h6,a,p,ul,a:focus ,.countdown-amount,.countdown-period,.single_ff .fa,.question_form input[type="text"],.question_form input[type="email"],
+.question_form input[type="submit"],.question_form textarea,.vg_hover a:hover,.pg_hover a:hover,.nav li a:hover,.sec_nav li a:hover,.slides-navigation a:focus,
+.slides-navigation_1 a:hover,.name span,.name h3,.shec_dec span,.time_venue span,.overlay .sec_headding h1,.slider a.btn-remore:hover,a.btn:hover,
+.single_te blockquote,.address h3{
+	color:#fff;
+}
+.navbar-toggle .icon-bar,.one-by-one-slider-thumbs li.one-by-one-slider-element,.single_te h4:after,.single_news div {
+	background: #fff;
+}
+a:hover,.question_form input[type="submit"]:hover,.about_area p.lead,.modal-body ul li a:hover,.shec_dec p a,.single_sponsor .fa,.single_news div .fa, .single_news h4 a:hover,.input-group .btn, .error, .simple_text p.lead, 
+.text-block h2 span, ul.social li a:hover{
+	color:#F26522;
+}
+.nav li a:hover,.sec_nav li a:hover,.sec_nav li.active,.nav .current,.shec_dec h4:after,.one-by-one-slider-thumbs li a,a.btn,.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span,.single_news h4:after{
+	background:#F26522;
+}
+
+.single_news,.subscribe_area input[type="text"],.input-group .btn{
+	background:#fff;
+}
+
+.subscribe_area input[type="text"]{
+    border:1px solid #F26522!important;
+}
+
+.input-group .btn{
+    border-top:1px solid #F26522!important;
+    border-right:1px solid #F26522!important;
+    border-bottom:1px solid #F26522!important;
+    border-left: 0px!important;
+}
+
+.bx-wrapper .bx-viewport {
+  background: none;
+  border: 0px solid #FFFFFF;
+  box-shadow: 0 0 0px #CCCCCC;
+  left: 0px;
+}
+.schedule_area .modal-header {
+	border-bottom: 1px solid #E5E5E5;
+}
+.single_sponsor{
+	border:1px solid #f1f1f1;
+}
+.single_sponsor:hover{
+	border:1px solid #F26522;
+}
+.single_news div{
+	border-right:2px solid #F26522;
+	box-shadow:-1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.single_vg,.single_pg{
+	/*box-shadow: 0 0 2px rgba(0,0,0,.5);*/
+}
+
+.sec_headding h1 span{
+    border-top: 5px solid #F26522;
+}
+
+.nav > li > a:hover, .nav > li > a:focus ,.tab-content .active{
+	background-color: rgba(0,0,0,.0);
+}
+
+
+h2.standard{
+	background: rgba(242, 101, 34, 0.5);
+}
+
+::selection{
+	background:#282828;
+	color:#fff;
+}
+::-moz-selection{
+	background:#282828;
+	color:#fff;
+}
+.bx-wrapper .bx-prev {
+	background-color: rgba(242,101,34,1) !important;
+	left: 0px;
+}
+.bx-wrapper .bx-next {
+	right: 0px;
+	background-color: rgba(242,101,34,1) !important;
+}
+
+
+.overlay, .slider-content{
+    background: rgba(53, 59, 73, 0.8);
+}
+
+
+.countdown-amount,.head,.home_cta,.single_ff .fa,.single_ff h1,.single_ff h4,.panel,.question_form input[type="text"],.question_form input[type="email"],a.btn:hover, .question_form input[type="submit"],.question_form textarea,.single_reg h2,.single_reg ul li,.single_reg h1,.vanue_name,.vanue_dec,.vanue_dec h4,.phone_no h1, .email_ad h1,.address,.phone_no p,.email_ad p,.vg_hover a,.pg_hover a,.navigation_1,.single_speakers .dec,.social ul li a,.slider a.btn-remore:hover, .time_venue,.shec_dec,.question_form h4, .countdown-period,.home_cta a:hover,.sec_nav li,.single_reg h4 a:hover,.single_reg h4, .question_form input[type="text"]:hover,.question_form input[type="text"]:focus,.question_form input[type="email"]:hover,.question_form input[type="email"]:focus, .question_form input[type="submit"]:hover,.question_form input[type="submit"]:focus,.question_form textarea:hover,.question_form textarea:focus,.single_reg h4 a:hover, .layer, .photogallery .bx-caption{
+	background: rgba(53, 59, 73, 0.8);
+}
+
+
+
+.panel-default > .panel-heading{
+	background:rgba(0,0,0,.3);
+}
+
+.sec_headding h1,.subscribe_area h4,.subscribe_area span,.simple_text h2,.simple_text h4,.modal-body ul li a,.single_news, .single_news div,.single_news h4 a,.subscribe_area input[type="text"]{
+	color:#6e8697;
+}
+
+.about_area p, .modal-body p, .single_news p, .simple_text p, .simple_text li, .modal h4, .modal h2, .modal span{
+/*    color: #353b49;*/
+    color: #6e8697;
+}
+
+.copy_right,.affix,.sec_bg_ov,.navbar{
+	background:#6e8697;
+}

@@ -1,0 +1,271 @@
+
+html{
+    font-size: 100%;
+}
+
+body{
+     font-size: 100%;
+}
+
+.navbar-brand {
+    padding:  10px 0 0px 10px;
+}    
+
+.navbar-nav > li > a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.overlay{
+	height:100%;
+}
+
+.sec_headding h1{
+	padding:105px 0 50px;
+}
+.sec_headding h1 span{
+/*	background:url(../images/headding_style.jpg) no-repeat center;*/
+	height:20px;
+	width:40px;
+	display:inline-block;
+}
+.sec_headding h1 span:first-child{
+	margin-right:50px;
+}
+.sec_headding h1 span:last-child{
+	margin-left:50px;
+}
+.simple_text {
+	padding-bottom:85px;
+}
+
+.simple_text li{
+    list-style: circle inside none;
+    padding-left:40px;
+}
+
+.modal{
+	z-index:999999999999;
+}
+button.close{
+	/* padding:0 10px; */
+}
+.modal-header {
+	border-bottom: 0px solid;
+}
+.modal-body img{
+	width:100%;
+}
+.modal-body{
+	position:relative;
+}
+.modal-body span{
+	margin-bottom:15px;
+	display:block;
+}
+.modal-body ul{
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+.modal-body ul li{
+	display:inline-block;
+}
+.modal-body ul li a{
+	display:inline-block;
+	padding:0 10px;
+	line-height:45px;
+}
+.event-dec span{
+	margin:15px 0 5px;
+}
+.event-dec p{
+	padding:15px 0;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+.m-text-left {
+    text-align: left;
+}
+
+.m-text-right{
+    text-align: right;
+}
+
+
+/*------------------------------------------------------------------
+
+Main */
+
+
+.schedule_area{
+	background:url(../images/kite.jpg) fixed;
+	background-size: cover;
+}
+.schedule_area .overlay{
+	padding-bottom:105px;
+}
+.sec_nav{
+	text-align:center;
+}
+.sec_nav{
+	width:100%;
+}
+.sec_nav li{
+	display:inline-block;
+    margin: 0 7px 10px;
+    width: 198px; 
+    font-size: 14px;
+}
+.sec_nav li a{
+	line-height:50px;
+	padding: 0 20px;
+	display:block;
+}
+.sec_nav li a:focus{
+	text-decoration:none;
+}
+.time_venue,.shec_dec{
+	margin-top:30px;
+    min-height: 150px;
+}
+.shec_dec{
+	padding:15px;
+}
+.shec_dec p{
+	padding:15px 0;
+}
+.shec_dec p a{
+	font-size:.8em;
+	margin-left:10px;
+}
+.shec_dec p a:hover{
+	text-decoration:underline;
+}
+.shec_dec span{
+	text-align:right;
+	display:block;
+	font-size:14px;
+}
+.shec_dec span .fa{
+	padding-right:5px;
+}
+.shec_dec h4{
+	position:relative;
+}
+.shec_dec h4:after {
+	bottom: -6px;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100px;
+}
+
+.time_venue{
+    margin-bottom: 10px;
+}
+.time_venue span{
+	display: block;
+	line-height: 30px;
+	padding: 23px 25px;
+}
+.time_venue h4{
+	line-height:40px;
+}
+
+
+
+/*------------------------------------------------------------------
+
+Animation Effect */
+
+
+.animate_top {
+	top: -30px;
+	opacity: 0;
+	position: relative;
+}
+.animate_bottom {
+	bottom: -30px;
+	opacity: 0;
+	position: relative;
+}
+.animate_left {
+	left: -60px;
+	opacity: 0;
+	position: relative;
+}
+.animate_right {
+	right: -60px;
+	opacity: 0;
+	position: relative;
+}
+.animate_fade_in,.sec_headding h1 {
+	opacity: 0;
+	position: relative;
+}
+.sec_headding h1 span:first-child {
+	left: -60px;
+	opacity: 0;
+	position: relative;
+}
+.sec_headding h1 span:last-child {
+	right: -60px;
+	opacity: 0;
+	position: relative;
+}
+
+
+/*------------------------------------------------------------------
+
+Custom Media Query */
+
+
+@media only screen and (max-width: 800px) {
+        
+	.parallax {
+		background-attachment: scroll !important;
+		background-position: center top !important;
+		background-size: cover !important;
+		height: auto;
+		margin: 0 auto;
+		width: 100%;
+		background-repeat: no-repeat;
+	}
+
+    html, body{
+        font-size: 80%;
+    }   
+    
+    .nav > li > a{
+        font-size: 10px;
+    }    
+    
+    .sec_headding h1 span   {
+        display: none;
+    } 
+    
+    .slider-ir0, .slider-ir2{
+        display: none!important;
+    }
+    
+	#super_slides{
+		height:850px;
+	}
+    
+    .vanue_name h2    {
+        margin-bottom: 40px;
+    }
+    
+ 	#map{
+		height:1050px;
+	}       
+    
+    .m-text-left, .m-text-right{
+        text-align: center;
+    }
+}    

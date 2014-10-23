@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:700);
+
+
+
+body,h1,h2,h3,h4,h5,h6,a,p{
+	font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 42px;
+	line-height: 44px;
+/*	font-weight: 600;*/
+	text-transform: uppercase;
+}
+h2{
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h3{
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 300;
+}
+h4{
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+h5{
+	
+}
+h6{
+	
+}
+p{
+	font-weight: 400;    
+/*    font-size: 0.95em;*/
+    font-size: 15px;
+    line-height: 1.6em;
+    color: #4d4c47;
+}
+
+.simple_text li {
+	font-weight: 400;    
+    font-size: 15px;
+    line-height: 1.8em;
+    color: #4d4c47;
+}
+
+.slider h1 {
+    color: #efefea;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 3.6em;
+    font-weight: 700;
+    margin-top: 60px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.slider h3 {
+    color: #efefea;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.error{
+    font-size:13px;
+    font-weight: 400px;
+}
+
+
+.photogallery .bx-caption span{
+    font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 400;
+}

@@ -1,0 +1,264 @@
+/* Global Settings */
+ body {
+    font-family:"Helvetica Neue", HelveticaNeue, TeXGyreHeros, FreeSans, "Nimbus Sans L", "Liberation Sans", Arimo, Helvetica, Arial, sans-serif;
+}
+article {
+    text-align: center;
+    background: rgba(255, 255, 255, .4);
+    width: 300px;
+    margin: 2em auto;
+    padding: 1em;
+}
+h2 {
+    margin-bottom: 1.5em;
+}
+p {
+    font-size: 1.3em;
+}
+/* Units Toggle */
+ #toggle {
+    padding: 0em 2em;
+    float: right;
+}
+#cel {
+    border-top-left-radius: .3em;
+    border-bottom-left-radius: .3em;
+}
+#far {
+    margin-left: -.26em;
+    border-top-right-radius: .3em;
+    border-bottom-right-radius: .3em;
+}
+#toggle button.active {
+    background-color: #f5f5f5;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f1f1f1));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, #f1f1f1);
+    background-image: linear-gradient(top, #f5f5f5, #f1f1f1);
+    border: 1px solid #dcdcdc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #222;
+}
+#toggle button {
+    background-color: #e2e2e2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#bebebe));
+    background-image: -webkit-linear-gradient(top, #e2e2e2, #bebebe);
+    background-image: linear-gradient(top, #e2e2e2, #bebebe);
+    border: 1px solid #bdbdbd;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    color: #444;
+}
+/* Weather Data Styles */
+ #weather {
+}
+.icon {
+    display:inline;
+    vertical-align:middle;
+    margin-top: -1.5em;
+}
+#temp {
+    font-size: 3em;
+}
+#units {
+    font-size: 2em;
+    vertical-align: super;
+}
+#description, #daily {
+    font-weight: bold;
+}
+
+/* added: */
+#wind-speed, #low {
+    margin-left: 2em;
+}
+body {
+        font: 300 112.5%/1.5em "Helvetica", "Arial", sans-serif;
+        margin: 3em 3em 6em;
+        padding: 0;
+      }
+
+      article {
+        margin: auto;
+        width: 30em;
+      }
+
+      h1 {
+        font-size: 3em;
+        line-height: 1em;
+        text-align: center;
+        margin: 0.5em 0;
+      }
+
+      p {
+        margin: 1.5em 0;
+      }
+
+      figure {
+        margin: 3em auto;
+        width: 368px;
+        height: 152px;
+      }
+
+      canvas {
+        display: block;
+        float: left;
+        margin-left: 8px;
+        margin-top: 8px;
+      }
+
+      pre {
+        font: 77.8%/1.5em "Lucida Sans Typewriter", "Lucida Console", "Monaco", "Bitstream Vera Sans Mono", monospace;
+        margin: 3.375em 1.6875em;
+      }
+
+      a, pre span.comment {
+        color: royalblue;
+      }
+
+      a:visited, pre span.constant {
+        color: indianred;
+      }
+      @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+
+  color: #fff;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+.body{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background-image: url(http://ginva.com/wp-content/uploads/2012/07/city-skyline-wallpapers-008.jpg);
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  z-index: 0;
+}
+
+.grad{
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -40px;
+  bottom: -40px;
+  width: auto;
+  height: auto;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.header{
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 255px);
+  z-index: 2;
+}
+
+.header div{
+  float: left;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.header div span{
+  color: #5379fa !important;
+}
+
+.login{
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 50px);
+  height: 150px;
+  width: 350px;
+  padding: 10px;
+  z-index: 2;
+}
+
+.login input[type=text]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+}
+
+.login input[type=password]{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 2px;
+  color: #fff;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 4px;
+  margin-top: 10px;
+}
+
+.login input[type=button]{
+  width: 260px;
+  height: 35px;
+  background: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  border-radius: 2px;
+  color: #a18d6c;
+  font-family: 'Exo', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 6px;
+  margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+  opacity: 0.8;
+}
+
+.login input[type=button]:active{
+  opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+  outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+.info{
+  color: black;
+}
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="skycons.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+
+ 
+        <script src="helper.js"></script>
+
+         <div class="body"></div>
+    <div class="grad"></div>
+    <div class="header">
+      <div><span>Fly</span>With Me</div>
+    </div>
+    <br>
+    <div class="login">
+        <input type="radio" class ="radioBtnClass" value = 'beginner'id="beginner"  /><label>Beginner</label><br />
+        <input type="radio" class ="radioBtnClass" value = 'intermediate' id="intermediate"  /><label>Intermediate</label><br />
+        <input type="radio" class ="radioBtnClass" value = 'advanced' id="expert"  /><label>Advanced</label><br />
+         <button onclick="submit()">Submit</button>
+    </div>
+
+
+
+<canvas id="icon1" width="128" height="128"></canvas>
+<canvas id="icon2" width="128" height="128"></canvas>
+    	
+
+
+
+
+<div class = "info" id="ip"></div>
+<div class = "info" id="address"></div>
+<div class = "info" id="coordinates"></div>
+<div class = "info" id="icon"></div>
+<div class = "info" id="nearestStormDistance"></div>
+<div class = "info" id="nearestStormBearing"></div>
+<div class = "info" id="precipIntensity"></div>
+<div class = "info" id="precipProbability"></div>
+<div class = "info" id="temperature"></div>
+<div class = "info" id="windSpeed"></div>
+<div class = "info" id="windBearing"></div>
+<div class = "info" id="summary"></div>
+
+ <p id="weather"><p>
+    	<pre>
+    <p id="details"><p>
+        
+
+
+        <script>
+
+
+  
+
+        function submit(){
+
+
+
+
+      $('.body').hide();
+      $('.grad').hide();
+      $('.header').hide();
+      $('.login').hide();
+
+     $.get("http://ipinfo.io", function (response) {
+    $("#address").html("Location: " + response.city + ", " + response.region);
+    $("#coordinates").html("Coordinates: " + response.loc);
+
+   
+ 	  var apiKey = '0f71ccfbc9e2202f17d0281c99b70d01';
+      var url = 'https://api.forecast.io/forecast/';
+
+      var data;
+
+    $.getJSON(url + apiKey + "/" + response.loc + "?callback=?", function(data) {
+      console.log(data);
+
+
+      //icons
+var skycons = new Skycons({"color": "blue"});
+skycons.add("icon1", data.currently.icon);
+//skycons.add(document.getElementById("icon2"), Skycons.RAIN);
+skycons.play();
+//skycons.set("icon1", Skycons.PARTLY_CLOUDY_NIGHT);
+skycons.remove("icon2");
+
+//Get user difficulty
+   if($("input[type='radio'].radioBtnClass").is(':checked')) {
+    var card_type = $("input[type='radio'].radioBtnClass:checked").val();
+    console.log(card_type);
+    alert(card_type);
+}
+//converty wind Bearing to cardinal direction
+var bearing = getCardinalDirection(data.currently.windBearing);
+
+
+
+      //$('#weather').html('and the temperature is: ' + data.currently.temperature);
+      $('#icon').html("Icon: " + data.currently.icon);
+      $("#nearestStormDistance").html("Nearest storm distance: " + data.currently.nearestStormDistance);
+      $("#nearestStormBearing").html("Nearest storm bearing: " + data.currently.nearestStormBearing);
+      $("#precipIntensity").html("precipitation intensity: " + data.currently.precipIntensity);
+      $("#precipProbability").html("precipitation probability: " + data.currently.precipProbability);
+      $("#temperature").html("temperature: " + data.currently.temperature);
+      $("#windSpeed").html("windspeed: " + data.currently.windSpeed);
+      $("#windBearing").html("wind bearing: " + bearing);
+      $("#summary").html("Summary: " +data.daily.summary);
+
+
+      $('#details').html(JSON.stringify(data, null, 4));
+
+
+    });
+	
+
+	}, "jsonp");
+	
+        }
+
+        </script>
+
+
+
+
+
+<script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+    </body>
+</html>
+
+
+<!--    $("#weather").empty()
+                 .append("<h2>" + data.name + "</h2>")
+                 .append("<img class='icon' src='" + foregroundSrc + "' />")
+                 .append("<span id='temp'>" + temperature + "</span>")
+                 .append("<p id='description'>" + data.weather[0].description + "</p>")
+                 .append("<p><span id='humidity'>" + data.main.humidity + "% humid</span>" +
+                            "<span id='wind-speed'>" + windSpeed + "</span></p>");
+    $("#forecast").empty()
+                  .append("<p id='daily'>Today's Forecast: " + forecast.list[0].weather[0].main + "</p>")
+                  .append("<p><span id='high'>High: " + dailyHigh + "</span>" +
+                             "<span id='low'>Low: " + dailyLow + "</span></p>");
+}
+-->
